@@ -77,5 +77,21 @@ textarea{
 }
 #legend {
   margin: auto;
+  font-size:20px;
+  font-weight: bolder;
 }
-
+.box1 {
+  height: 30px;
+  background-color: #d3d3d3 ;
+  text-align: center;
+}
+.box2 {
+  height: 30px;
+  background-color:  #ff6961 ;
+  text-align: center;
+}
+.box3 {
+  height: 30px;
+   background-color:#77dd77 ;
+  text-align: center;
+}
