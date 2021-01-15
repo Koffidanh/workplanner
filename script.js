@@ -30,15 +30,15 @@ $(document).ready(function () {
   //Loop to run the changing color
   //Present/ past/future
   //Loop to change the color to 8am row
-  if (dayHr == JSON.parse(workTimeM[0]) ) {
+  if (dayHrM == JSON.parse(workTimeM[0]) || dayHr == JSON.parse(workTime[0]) && dayPm == amPm[0] ) {
     $("#text8").addClass("present");
     //alert("It is present");
     //  console.log("true");
-  } else if (dayHr < JSON.parse(workTimeM[0]) ) {
+  } else if (dayHrM > JSON.parse(workTimeM[0]) || dayHr > JSON.parse(workTime[0]) && dayPm == amPm[0] ) {
     $("#text8").addClass("past");
     //alert("It is past");
     //  console.log("true");
-  } else if (dayHr > JSON.parse(workTimeM[0]) ) {
+  } else if (dayHrM < JSON.parse(workTimeM[0]) || dayHr < JSON.parse(workTime[0]) && dayPm == amPm[0] ) {
     $("#text8").addClass("future");
     //alert("It is future");
     //  console.log("true");
