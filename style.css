@@ -5,12 +5,16 @@ body {
 }
 
 textarea {
-  background: transparent;
-  border: none;
+  background:white;
+  border: 1px solid black;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
-  padding: 10px;
+  height: 100%;
+  width: 100%;
+  margin-top: auto;
+  font-size: 16px;
+  
 }
 
 .jumbotron {
@@ -40,6 +44,7 @@ textarea {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+ 
 }
 
 .past {
@@ -66,6 +71,9 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  height:100%;
+  width: 100%;
+  
 }
 
 .saveBtn i:hover {
@@ -75,35 +83,15 @@ textarea {
 #currentDay {
   font-weight: bolder;
 }
-#legend {
-  margin: auto;
-  font-size: 20px;
-  font-weight: bolder;
-}
-.box1 {
-  height: 30px;
-  background-color: #d3d3d3;
-  text-align: center;
-}
-.box2 {
-  height: 30px;
-  background-color: #ff6961;
-  text-align: center;
-}
-.box3 {
-  height: 30px;
-  background-color: #77dd77;
-  text-align: center;
-}
-#hours {
-  height: 80px;
-  width: 80px;
-  margin-bottom: auto;
-  font-size: 25px;
-  color: black;
+
+@media screen and (min-width: 500px) {
+  body {
+     width:420px;
+  }
 }
 
-textarea {
-  height: 100%;
-  margin: auto;
+@media screen and (min-width: 800px) {
+  body {
+     width:800px;
+  }
 }
