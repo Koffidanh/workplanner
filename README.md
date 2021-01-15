@@ -1,6 +1,6 @@
 # Work Schedule Planner
 This Work Schedule Planner was created to help the user plan his/her daily work schedule.
-This work planner was designed to help the user to organism his/her by inputting the tasks that need to be accomplish by the end of the day. All the user needs to do is to save all the different tasks that need to be done in each responsible hour slots. This planner used the typical work hour from 8Am to 5PM. The planner page shows two HTML structures.
+This work planner was designed to help the user to organism his/her by inputting the tasks that need to be accomplish by the end of the day. All the user needs to do is to save all the different tasks that need to be done in each responsible hour slots. This planner used the typical work hour from 8Am to 5PM. And to clear the time slot, the user needs to empty the slot and save it. The planner page shows two HTML structures.
 [Work Schedule Planner](https://koffidanh.github.io/workplanner/)
 
 ##  Header
@@ -18,3 +18,4 @@ The body of this planner shows the timer, the textarea for the user to enter his
 * [Jquery](https://jquery.com/)
 * [Bootstrap](https://getbootstrap.com/)
 * [Stackoverflow](https://stackoverflow.com/)
+* [Moment().js](https://momentjs.com/)
