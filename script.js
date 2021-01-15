@@ -5,12 +5,14 @@ var dayHr = (moment().format('h'));
 var dayHrM = (moment().format('HH'));//////
 var dayPm = (moment().format('A'));
 // Create time from 08:00 am to 05:00 pm
+//Imperial hour
 var workTime = ["8", "9", "10", "11", "12", "1", "2", "3", "4", "5"];
+//Military hour
 var workTimeM = ["8", "9", "10", "11", "12", "13", "14", "15", "16", "17"];
 //Create a loop to display am and pm
 var amPm = ["AM", "AM", "AM", "AM", "PM", "PM", "PM", "PM", "PM", "PM"];
 
-// 1. Create a div for working hours
+// 1. Create a text for working hours
 $("#hours8").text(workTime[0] + " " + amPm[0]);
 $("#hours9").text(workTime[1] + " " + amPm[1]);
 $("#hours10").text(workTime[2] + " " + amPm[2]);
@@ -27,6 +29,7 @@ $(document).ready(function () {
 
   //Loop to run the changing color
   //Present/ past/future
+  //Loop to change the color to 8am row
   if (dayHr == JSON.parse(workTimeM[0]) ) {
     $("#text8").addClass("present");
     //alert("It is present");
@@ -40,7 +43,7 @@ $(document).ready(function () {
     //alert("It is future");
     //  console.log("true");
   }
-  
+  //Loop to change the color to 9am row
   if (dayHrM == JSON.parse(workTimeM[1]) || dayHr == JSON.parse(workTime[1]) && dayPm == amPm[1]) {
     $("#text9").addClass("present");
     //alert("It is present");
@@ -54,7 +57,7 @@ $(document).ready(function () {
     //alert("It is future");
     //  console.log("true");
   }
-  
+  //Loop to change the color to 10am row
   if (dayHrM == JSON.parse(workTimeM[2]) || dayHr == JSON.parse(workTime[2]) && dayPm == amPm[2]) {
     $("#text10").addClass("present");
     //alert("It is present");
@@ -68,7 +71,7 @@ $(document).ready(function () {
     //alert("It is future");
     //  console.log("true");
   }
-
+//Loop to change the color to 11am row
   if (dayHrM == JSON.parse(workTimeM[3]) || dayHr == JSON.parse(workTime[3]) && dayPm == amPm[3] ) {
     $("#text11").addClass("present");
     //alert("It is present");
@@ -82,7 +85,7 @@ $(document).ready(function () {
     //alert("It is future");
     //  console.log("true");
   }
-
+//Loop to change the color to 12pm row
   if (dayHrM == JSON.parse(workTimeM[4]) || dayHr == JSON.parse(workTime[4]) && dayPm == amPm[4])  {
     $("#text12").addClass("present");
     //alert("It is present");
@@ -96,7 +99,7 @@ $(document).ready(function () {
     //alert("It is future");
     //  console.log("true");
   }
-
+//Loop to change the color to 1pm row
   if (dayHrM == JSON.parse(workTimeM[5]) || dayHr == JSON.parse(workTime[5]) && dayPm == amPm[5] ) {
     $("#text1").addClass("present");
     //alert("It is present");
@@ -110,7 +113,7 @@ $(document).ready(function () {
     //alert("It is future");
     //  console.log("true");
   }
-
+//Loop to change the color to 2pm row
   if (dayHrM == JSON.parse(workTimeM[6]) || dayHr == JSON.parse(workTime[6]) && dayPm == amPm[6]  ) {
     $("#text2").addClass("present");
     //alert("It is present");
@@ -124,7 +127,7 @@ $(document).ready(function () {
     //alert("It is future");
     //  console.log("true");
   }
-
+//Loop to change the color to 3pm row
   if (dayHrM == JSON.parse(workTimeM[7]) || dayHr == JSON.parse(workTime[7]) && dayPm == amPm[7]  ) {
     $("#text3").addClass("present");
     //alert("It is present");
@@ -138,7 +141,7 @@ $(document).ready(function () {
     //alert("It is future");
     //  console.log("true");
   }
-  
+  //Loop to change the color to 4pm row
   if (dayHrM == JSON.parse(workTimeM[8]) || dayHr == JSON.parse(workTime[8]) && dayPm == amPm[8]  ) {
     $("#text4").addClass("present");
     //alert("It is present");
@@ -152,7 +155,7 @@ $(document).ready(function () {
     //alert("It is future");
     //  console.log("true");
   }
-  
+  //Loop to change the color to 5pm row
   if (dayHrM == JSON.parse(workTimeM[9]) || dayHr == JSON.parse(workTime[9]) && dayPm == amPm[9]  ) {
     $("#text5").addClass("present");
     //alert("It is present");
@@ -167,9 +170,7 @@ $(document).ready(function () {
     //  console.log("true");
   }
   
- 
-
-   //Creating a function for saving button
+    //Creating a function for saving button
     //save button for 8am
   $("#saveBtn8").click(function () {
     //Setting variable for the user input
@@ -263,12 +264,3 @@ $("#text5").text(JSON.parse(localStorage.getItem("5PM")));
 $("#text5").attr("style", "color: black");
 
 });
-
-
-
-
-
-
-
-
-
