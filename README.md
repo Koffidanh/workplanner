@@ -9,12 +9,12 @@ The Header of this planner shows the name of the app, a small description of the
 
 ## Body
 The body of this planner shows the timer, the textarea for the user to enter his/her duties and save buttons. The color of the textarea changes according to the user local time. The color grey means past due assigment. The color red means the assignment is due at the moment. And the color green means the next assigmnent to come.
-![body](https://github.com/Koffidanh/coding-quiz/blob/main/Assets/body.png)
+![body](https://github.com/Koffidanh/workplanner/blob/main/Assets/body.png)
 ### Work Schedule Planner
 ![workplanner](https://github.com/Koffidanh/workplanner/blob/main/Assets/workplanner.png)
 
 ### Resources
-[W3schools](https://www.w3schools.com/)
-[Jquery](https://jquery.com/)
-[Bootstrap](https://getbootstrap.com/)
-[Stackoverflow](https://stackoverflow.com/)
+* [W3schools](https://www.w3schools.com/)
+* [Jquery](https://jquery.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Stackoverflow](https://stackoverflow.com/)
