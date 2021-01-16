@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -36,47 +37,11 @@
     <!-- Timeblocks go here -->
     <div  class="row time-block">
       <div class="col-md-1 hour bg-secondary rounded">
-        <div id="hours8" ></div>
+        <div id="hours0" ></div>
       </div>
-      <textarea id="text8" class="col-md-10 description">
+      <textarea id="text0" class="col-md-10 description">
         </textarea>
-      <button id="saveBtn8" class="btn saveBtn col-md-1"><i class="far fa-save" ></i></button>
-    </div>
-
-    <div  class="row time-block">
-      <div class="col-md-1 hour bg-secondary rounded">
-        <div id="hours9"></div>
-      </div>
-      <textarea id="text9" class="col-md-10 description">
-        </textarea>
-      <button  id="saveBtn9" class="btn saveBtn col-md-1"><i class="far fa-save"></i></button>
-    </div>
-
-    <div  class="row time-block">
-      <div class="col-md-1 hour bg-secondary rounded">
-        <div id="hours10"></div>
-      </div>
-      <textarea id="text10" class="col-md-10 description">
-        </textarea>
-      <button  id="saveBtn10" class="btn saveBtn col-md-1"><i class="far fa-save"></i></button>
-    </div>
-
-    <div  class="row time-block">
-      <div class="col-md-1 hour bg-secondary rounded">
-        <div id="hours11"></div>
-      </div>
-      <textarea id="text11" class="col-md-10 description">
-        </textarea>
-      <button  id="saveBtn11" class="btn saveBtn col-md-1"><i class="far fa-save"></i></button>
-    </div>
-
-    <div  class="row time-block">
-      <div class="col-md-1 hour bg-secondary rounded">
-        <div id="hours12"></div>
-      </div>
-      <textarea id="text12" class="col-md-10 description">
-        </textarea>
-      <button  id="saveBtn12" class="btn saveBtn col-md-1"><i class="far fa-save"></i></button>
+      <button id="saveBtn0" class="btn saveButn col-md-1"><i class="far fa-save" ></i></button>
     </div>
 
     <div  class="row time-block">
@@ -85,7 +50,7 @@
       </div>
       <textarea id="text1" class="col-md-10 description">
         </textarea>
-      <button  id="saveBtn1" class="btn saveBtn col-md-1"><i class="far fa-save"></i></button>
+      <button  id="saveBtn1" class="btn saveButn col-md-1"><i class="far fa-save"></i></button>
     </div>
 
     <div  class="row time-block">
@@ -94,7 +59,7 @@
       </div>
       <textarea id="text2" class="col-md-10 description">
         </textarea>
-      <button  id="saveBtn2" class="btn saveBtn col-md-1"><i class="far fa-save"></i></button>
+      <button  id="saveBtn2" class="btn saveButn col-md-1"><i class="far fa-save"></i></button>
     </div>
 
     <div  class="row time-block">
@@ -103,7 +68,7 @@
       </div>
       <textarea id="text3" class="col-md-10 description">
         </textarea>
-      <button  id="saveBtn3" class="btn saveBtn col-md-1"><i class="far fa-save"></i></button>
+      <button  id="saveBtn3" class="btn saveButn col-md-1"><i class="far fa-save"></i></button>
     </div>
 
     <div  class="row time-block">
@@ -112,7 +77,7 @@
       </div>
       <textarea id="text4" class="col-md-10 description">
         </textarea>
-      <button  id="saveBtn4" class="btn saveBtn col-md-1"><i class="far fa-save"></i></button>
+      <button  id="saveBtn4" class="btn saveButn col-md-1"><i class="far fa-save"></i></button>
     </div>
 
     <div  class="row time-block">
@@ -121,14 +86,50 @@
       </div>
       <textarea id="text5" class="col-md-10 description">
         </textarea>
-      <button  id="saveBtn5" class="btn saveBtn col-md-1"><i class="far fa-save"></i></button>
+      <button  id="saveBtn5" class="btn saveButn col-md-1"><i class="far fa-save"></i></button>
+    </div>
+
+    <div  class="row time-block">
+      <div class="col-md-1 hour bg-secondary rounded">
+        <div id="hours6"></div>
+      </div>
+      <textarea id="text6" class="col-md-10 description">
+        </textarea>
+      <button  id="saveBtn6" class="btn saveButn col-md-1"><i class="far fa-save"></i></button>
+    </div>
+
+    <div  class="row time-block">
+      <div class="col-md-1 hour bg-secondary rounded">
+        <div id="hours7"></div>
+      </div>
+      <textarea id="text7" class="col-md-10 description">
+        </textarea>
+      <button  id="saveBtn7" class="btn saveButn col-md-1"><i class="far fa-save"></i></button>
+    </div>
+
+    <div  class="row time-block">
+      <div class="col-md-1 hour bg-secondary rounded">
+        <div id="hours8"></div>
+      </div>
+      <textarea id="text8" class="col-md-10 description">
+        </textarea>
+      <button  id="saveBtn8" class="btn saveButn col-md-1"><i class="far fa-save"></i></button>
+    </div>
+
+    <div  class="row time-block">
+      <div class="col-md-1 hour bg-secondary rounded">
+        <div id="hours9"></div>
+      </div>
+      <textarea id="text9" class="col-md-10 description">
+        </textarea>
+      <button  id="saveBtn9" class="btn saveButn col-md-1"><i class="far fa-save"></i></button>
     </div>
 
   
-  <script src="moment.js"></script>
+  
   <script src="script.js"></script>
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  
 </body>
 
 </html>
